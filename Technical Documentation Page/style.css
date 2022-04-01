@@ -1,0 +1,131 @@
+.layout {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    position: relative;
+}
+
+nav {
+    width: 300px;
+    padding: 2rem 0 2rem 0;
+    margin-left: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+main {
+    width: auto;
+    padding: 2rem;
+    margin-left: 300px;
+    border-left: 1px solid black;
+
+}
+
+main header {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+nav header {
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-bottom: 1px solid black;
+    padding: 0;
+
+
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    list-style-type: none;
+    border-bottom: 1px solid black;
+
+
+}
+
+a:not([id="top"]):not([target="_blank"]) {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px 2rem 10px 2rem;
+
+}
+
+a:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+nav a:visited {
+    color: black;
+}
+
+code {
+    display: block;
+    background-color: rgb(241, 236, 236);
+    padding: 0.5rem;
+    margin-left: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main p {
+    padding-left: 1rem;
+}
+
+main li {
+    margin-left: 2rem;
+}
+
+.indented_list_item {
+    margin-left: 5rem;
+    list-style-type: circle;
+}
+
+main p,
+main li,
+main code {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+
+    .layout {
+        display: block;
+
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        display: block;
+        border: 1px solid black;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    nav {
+        width: auto;
+        position: static;
+
+    }
+
+    main {
+        margin-left: 0;
+        border-left: none;
+    }
+
+
+}
